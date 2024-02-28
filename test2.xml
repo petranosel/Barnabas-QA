@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="suite">-->
+<!--    <test name="TestNgh1">-->
+<!--        <parameter name="a" value="10"/>-->
+<!--        <parameter name="b" value="10"/>-->
+
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="TestNGH1.Last6"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.alarmClockTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.answerCellTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.Sum2Test"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.teenSumTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.TwoAsOnetest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.teaPartytest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.Sum3Test"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="TestNGH1.CigarPartyTest"/>&ndash;&gt;-->
+<!--            <class name="TestNGH1.TestCodetwo"/>-->
+<!--&lt;!&ndash;           <class name="TestNGH1.TestCodeThree"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="UnittestNg.AnnotationsExample"/>&ndash;&gt;-->
+
+
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <listeners>-->
+<!--        <listener class-name="org.testng.reporters.TestHTMLReporter"/>-->
+<!--        <listener class-name="org.testng.reporters.EmailableReporter2"/>-->
+<!--    </listeners>-->
+
+
+<!--</suite>-->
+
+<suite name="parallelTest" parallel="tests" thread-count="2">
+<test name="chromeTest">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="Selinium.TestONE"/>
+    </classes>
+</test>
+<test name="firefoxTest">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+        <class name="Selinium.TestONE"></class>
+    </classes>
+    </test>
+</suite>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="All Test Suite">-->
+<!--    <test verbose="2" preserve-order="true" name="C:/Users/meedh/IdeaProjects/Automation_002/src/test/java/TestNGH1">-->
+<!--        <classes>-->
+<!--            <class name="TestNGH1.CigarPartyTest">-->
+<!--                <methods>-->
+<!--                    <include name="testCigarParty"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.Last6">-->
+<!--                <methods>-->
+<!--                    <include name="testFirstLast6"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.Sum2Test">-->
+<!--                <methods>-->
+<!--                    <include name="testSum2"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.Sum3Test">-->
+<!--                <methods>-->
+<!--                    <include name="testSum3"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.TwoAsOnetest">-->
+<!--                <methods>-->
+<!--                    <include name="testTwoAsOne"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.alarmClockTest">-->
+<!--                <methods>-->
+<!--                    <include name="testAlarmClock"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.answerCellTest">-->
+<!--                <methods>-->
+<!--                    <include name="testAnswerCell"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.midThreetest">-->
+<!--                <methods>-->
+<!--                    <include name="testMidThree"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.teaPartytest">-->
+<!--                <methods>-->
+<!--                    <include name="testTeaParty"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestNGH1.teenSumTest">-->
+<!--                <methods>-->
+<!--                    <include name="testTeenSum"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+<suite name="parallelTest" parallel="tests" thread-count="2">
+    <test name="chromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Selinium.ToolsQATest"/>
+        </classes>
+    </test>
+    <test name="firefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Selinium.ToolsQATest"></class>
+        </classes>
+    </test>
+</suite>
